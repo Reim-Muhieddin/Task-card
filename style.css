@@ -1,0 +1,80 @@
+.Txt {
+  font-size: 100px;
+  background: linear-gradient(#6e9ab8, rgb(235, 4, 188));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+}
+.contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.D {
+  width: 340px;
+  height: 450px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: pink;
+  border-radius: 20px;
+  margin: 10px;
+  padding-top: 20px;
+}
+.D img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(126, 14, 83);
+  z-index: 9;
+}
+.D h1 {
+  color: cornflowerblue;
+}
+.D .foot {
+  display: flex;
+  width: auto;
+  padding: 20px;
+  gap: 20px;
+  visibility: hidden;
+}
+.D .foot span {
+  margin-left: 15px;
+  padding: 20px;
+
+}
+.D .foot span:hover {
+  background-color: cornflowerblue;
+}
+.D .head {
+  width: 340px;
+  height: 250px;
+  position: absolute;
+  background-color: #6e9ab8;
+  border-radius: 40%;
+  top: 0px;
+  transform: translateY(-80px);
+  visibility: hidden;
+}
+ 
+.D:hover .head{
+  visibility: visible;
+} 
+.D:hover .foot{
+  background-color: #6e9ab8;
+   visibility: visible;
+}
+.foot span:hover i{
+  color :beige;
+}
+ .D:hover img{
+width: 200px;
+height: 200px;
+border: 7px solid white;
+outline: 5px solid blueviolet;
+filter: blur(0px);
+}
